@@ -7,12 +7,19 @@
 # ChatGPT was used to assist me in writing this
 # It provided the base code, I fixed the bugs, and modified it for my needs
 
-def copy_html(source_file, destination_file):
+postName = input('Please type the name of the post: ')
+destination = f'blog/{postName}.html'
+
+def copy_html(source_file, destination_file,):
     try:
         # Open the source file in read mode
         with open(source_file, 'r') as source:
             # Read the HTML content from the source file
+            postNameSpace = postName.replace('_', ' ')
             html_content = source.read()
+            html_content = html_content.replace('Hello World!', postNameSpace)
+            print(postName)
+            print(html_content)
 
             # Open the destination file in write mode
             with open(destination_file, 'w') as destination:
@@ -26,6 +33,4 @@ def copy_html(source_file, destination_file):
     except Exception as e:
         print(f"An error occurred: {str(e)}")
 
-postName = input('Please type the name of the post: ')
-destination = f'blog/{postName}.html'
 copy_html('template.html', destination)
