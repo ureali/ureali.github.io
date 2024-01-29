@@ -1,5 +1,6 @@
 body { 
     font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
 }
 
 header {
@@ -17,8 +18,16 @@ nav > ul > li {
     display: inline;
 }
 
-nav > ul > li > a, a:visited, a:active {
+a, a:visited, a:active {
     color: inherit;
+}
+
+.about-social-handles > a:visited, a {
+    text-decoration: none;
+}
+
+.about-social-handles > a:hover {
+    text-decoration: underline;
 }
 
 nav > ul > li > a {
@@ -50,6 +59,20 @@ img {
     margin-bottom: 2em;
 }
 
+.social-ico {
+    max-width: 32px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.about-social-ico {
+    display: inline-block;
+    max-width: 32px;
+    margin: 0;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
 h1, h2, h3 {
     width: fit-content;
     margin: auto;
@@ -63,16 +86,28 @@ h2 {
     font-size: 2em;
 }
 
-
 main > ul, ol, dl {
     width: fit-content;
     margin: auto;
 }
 
-p {
+p, dd {
     font-size: 1.6em;
     width: 95%;
     margin: auto;
     margin-top: 10px;
 }
 
+.about-social-handles {
+    width: fit-content;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.85em;
+    text-align: center;
+    border-top: 1px solid black;
+    margin-top: 20px;
+}
