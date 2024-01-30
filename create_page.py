@@ -3,7 +3,7 @@
 # Author: Stanislav Nehretskyi
 # Date last modified: 1/26/2024
 
-from bs4 import BeautifulSoup;
+#from bs4 import BeautifulSoup;
 
 postName = input('Please type the name of the post: ')
 destination = f'blog/{postName}.html'
@@ -13,9 +13,6 @@ def copy_html(source_file, destination_file,):
         # Open the source file in read mode
         with open(source_file, 'r') as source:
             # Read the HTML content from the source file
-            soup = BeautifulSoup(source)
-            body = soup.body.contents
-            print(body)
             postNameSpace = postName.replace('_', ' ')
             html_content = source.read()
             html_content = html_content.replace('Hello World!', postNameSpace)
