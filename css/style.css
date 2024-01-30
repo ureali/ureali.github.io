@@ -12,9 +12,11 @@ nav > ul {
     list-style-type: none;
     margin: 0;
     font-size: 2em;
+    margin: auto;
+    width: fit-content;
 }
 
-nav > ul > li {
+header > nav > ul > li {
     display: inline;
 }
 
