@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body { 
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
@@ -52,6 +56,29 @@ nav > ul > li > a:hover {
     color: white;
     text-decoration: underline;
     background-color: black;
+}
+
+#projectList{
+    max-width: 80%;
+}
+
+#projectList li {
+    max-width: fit-content;
+    margin: auto;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+#projectList img {
+    max-width: none;
+    margin: 0;
+}
+
+#projectList a {
+    display: block;
+    padding: 0;
 }
 
 main {
