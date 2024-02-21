@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    text-align: center;
+}
+
+nav > ul li {
+    font-size: 2em;
+    display: inline;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+nav > ul li:hover {
+    background-color: #F0F0F0; 
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #F0F0F0;
+    color: #21D9ED;
+    text-decoration: underline;
+}
+
+nav > ul li:nth-child(1) > a:hover {
+    color: #F0B100;
+    text-decoration: underline;
+}
+
+nav > ul li:nth-child(2) > a:hover {
+    color: #F00084;
+    text-decoration: underline;
+}
+
+nav > ul li:nth-child(3) > a:hover {
+    color: #21D9ED;
+    text-decoration: underline;
+}
+
+
+
+header > h1 {
+    margin: 0;
+    text-align: center;
+    background-color: #F56A00;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    font-size: 1.5em;
+}
+
+main h1, h2 {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    background-color: #E0C900;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#travelsHeader {
+    margin-bottom: 20px;
+    background-color: #293646;
+}
+
+main article {
+    clear: left;
+}
+
+main article p{
+    width: 60%;
+    margin: 20px auto 20px auto;
+    text-align: center;
+} 
+
+main img {
+    width: 30%;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+main a, main a:visited {
+    background-color: #F56A00;
+    color: white;
+    padding: 10px;
+}
+
+#interestingList {
+    list-style-type: square;
+}
+
+#interestsList {
+    list-style-type: none;
+}
+
+#interestsList li{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+} 
+
+#interestingList li:last-child {
+    font-weight: bold;
+}
+
+.map {
+    width: 100%;
+    float: none;
+}
+
+footer {
+    clear: left;
+    border-top: 1px solid black;
+    text-align: center;
+}
