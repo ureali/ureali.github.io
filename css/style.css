@@ -57,7 +57,7 @@ nav > ul > li > a:hover {
     padding: 0;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 720px));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 25vw));
     gap: 20px 20px;
 }
 
