@@ -20,12 +20,6 @@ nav > ul {
     width: fit-content;
 }
 
-#projectList {
-    text-align: center;
-    padding: 0;
-    margin: auto;
-}
-
 header > nav > ul > li {
     display: inline;
 }
@@ -58,27 +52,42 @@ nav > ul > li > a:hover {
     background-color: black;
 }
 
+#projectList {
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 720px));
+    gap: 20px 20px;
+}
+
 #projectList{
     max-width: 80%;
 }
 
 #projectList li {
-    max-width: fit-content;
+    max-width: 33vw;
     margin: auto;
     border: 2px solid black;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
 
 
 #projectList img {
     max-width: 100%;
+    width: 33vw;
+    height: 33vw;
+    object-fit: contain;
     margin: 0;
 }
 
 #projectList a {
+    font-size: 0.7em;
     display: block;
     padding: 0;
+}
+
+#projectList li > a:first-child:hover {
+    background-color: inherit;
 }
 
 main {
