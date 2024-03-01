@@ -92,10 +92,10 @@ nav > ul > li > a:hover {
 
 
 @media screen and (max-width: 640px) {
-    #peojectList {
+    #projectList {
         max-width: 100%;
     }
-    
+
     #projectList img {
         width: 80vw;
         height: 80vw;
