@@ -90,6 +90,20 @@ nav > ul > li > a:hover {
     background-color: inherit;
 }
 
+
+@media screen and (max-width: 640px) {
+    #projectList img {
+        width: 80vw;
+        height: 80vw;
+        object-fit: contain;
+    }
+
+    #projectList li {
+        max-width: 80vw;
+    }
+    
+}
+
 main {
     padding-top: 2%;
 }
