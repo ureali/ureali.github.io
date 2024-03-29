@@ -52,15 +52,25 @@ nav > ul > li > a:hover {
     background-color: black;
 }
 
+
 #my-photo {
-    width: 480px;
-    height: 640px;
+    width: 40%;
 }
 
 #my-photo-caption {
     margin: auto;
-    width: 480px;
+    width: 40%;
     text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+    #my-photo {
+        width: 80%;
+    }
+    
+    #my-photo-caption {
+        width: 80%;
+    }
 }
 #projectList {
     text-align: center;
