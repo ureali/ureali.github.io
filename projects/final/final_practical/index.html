@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanislav Nehretskyi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="gridHeader">
+            <h1>Stanislav Nehretskyi</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contactMe">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+       <section id="about">
+            <div id="introduction">
+                  <h1>Hello</h1>     
+            </div>
+            <div id="aboutText">
+                <img src="photo.jpg" alt="" id="photo">
+                <h2>I'm Stanislav</h2>
+                <h2 id="highlight">Currently:</h2>
+                <p>Student at St. Clair College</p>
+            </div>
+        </section>
+        <section id="skills">
+           <div id="skillsIntro">
+                <h1>Here's What I Can Do</h1>
+            </div>
+            <div id="skillsTableBlock">
+                <table id="skillsTable">
+                    <caption>My Skills</caption>
+                    <colgroup>
+                        <col span="2" id="2cols">
+                        <col span="1" id="3col">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Knowledge</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>8/10</td>
+                            <td>I can code websites using HTML with ease</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>6/10</td>
+                            <td>I can design websites using CSS, however there is a room for improvement</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>4/10</td>
+                            <td>I can write simple scripts for webpages, but anything more complex is a challenge</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>6/10</td>
+                            <td>I am familiar with Java, and can make simple programs using it</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>7/10</td>
+                            <td>I can apply Python in real world, however I can't write complex programs yet</td>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                            <td>7/10</td>
+                            <td>I can use SQL with ease</td>
+                        </tr>
+                        <tr>
+                            <td>Design</td>
+                            <td>2/10</td>
+                            <td>I am definitely not a designer</td>
+                        </tr>
+                        <tr>
+                            <td>French</td>
+                            <td>0/10</td>
+                            <td>I don't know French</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </section>
+            <section id="contactMe">
+                <div id="contactIntro">
+                    <h1>Contact Me</h1>
+                </div>
+                <div id="formBlock">
+                    <form action="">
+                    <label for="typeInquiry">Please select the type of inquiry:</label>
+                    <select name="typeInquiry" id="">
+                        <option selected disabled>Please Choose An Option</option>
+                        <option>Business</option>
+                        <option>Personal</option>
+                        <option>Other</option>
+                    </select>
+                    <br>
+                    <label for="name">Please enter your full name:</label>
+                    <input type="text" name="name" id="" required placeholder="John Doe">
+                    <br>
+                    <label for="email">Please enter your email:</label>
+                    <input type="email" name="email" id="" placeholder="johndoe@gmail.com">
+                    <br>
+                    <label for="phone">Please enter your phone:</label>
+                    <input type="text" name="phone" pattern="^[\+]?[\(]?[0-9]{3}[\)]?[\-\s\.]?[0-9]{3}[\-\s\.]?[0-9]{4,6}$" required>
+                    <br>
+                    <label for="message">Please enter your message:</label>
+                    <br>
+                    <textarea name="message" placeholder=""></textarea>
+                    <br>
+                    <input type="checkbox" name="agree" id="">  
+                    <label for="agree">I agree to be contacted in the near future. <br>I understand that this information will be stored indefinitely and might be sold to the third parties</label>          
+                    <br>        
+                    <button type="submit">Submit</button>
+                </form>
+                </div>
+        </section>
+    </main>
+    <footer>Stanislav Nehretskyi</footer>
+</body>
+</html>
